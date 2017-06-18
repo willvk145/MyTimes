@@ -2,6 +2,10 @@ body{
 
 }
 
+div{
+  border: 1px solid black;
+}
+
 .header{
   display: flex;
   color: MediumAquamarine;
@@ -11,6 +15,7 @@ body{
   justify-content: space-between;
   padding: 10px 20px;
   border-bottom: 1px solid black;
+  align-items: center;
 }
 
 .logo{
@@ -25,16 +30,82 @@ body{
 .nav li{
   display: inline-block;
   list-style: none;
-  margin: 0px 10px;
+  margin: 0px 5px;
   border-radius: 4px;
 }
 
 .nav li a{
   color: black;
-  padding: 3px;
+  padding: 4px;
   border-radius: 10px;
 }
 
 .nav li a:hover{
   background-color: grey
+}
+
+.content{
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.column.large{
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 630px;
+}
+
+.column.medium{
+  width: 300px;
+}
+
+.column.small{
+  width: 240px;
+}
+
+.headline{
+  height: 300px;
+  display: flex;
+}
+
+.headline span{
+  color: white;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#phish{
+  background-image: url("../img-story-main.png");
+}
+
+#phish span{
+  font-size: 40px;
+}
+
+#backwards{
+  background-image: url("../img-story-2.png");
+}
+
+#cameras{
+  background-image: url("../img-story-3.png");
+}
+
+#cats{
+  background-image: url("../img-story-1.png");
 }
