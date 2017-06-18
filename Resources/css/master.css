@@ -3,7 +3,11 @@ body{
 }
 
 div{
-  border: 1px solid black;
+  border: 1px solid white;
+}
+
+h1{
+  font-size: 30px;
 }
 
 .header{
@@ -53,13 +57,14 @@ div{
 .column{
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 10px;
 }
 
 .column.large{
   flex-direction: row;
   flex-wrap: wrap;
   width: 630px;
+  justify-content: space-around;
 }
 
 .column.medium{
@@ -68,6 +73,13 @@ div{
 
 .column.small{
   width: 240px;
+  align-content:center;
+}
+
+.column.sub{
+  width: 300px;
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .headline{
@@ -80,6 +92,7 @@ div{
   font-family: Georgia;
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .article{
